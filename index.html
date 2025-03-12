@@ -324,37 +324,15 @@
         </div>
     </div>
         <footer>
-        <p>ติดต่อเรา: <a href="mailto:nopparat@jsccib.org">nopparat@jsccib.org</a></p>
+        <p>ติดต่อ: <a href="mailto:nopparat@jsccib.org">nopparat@jsccib.org</a></p>
     </footer>
-    <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ฟอร์มสั่งงานกราฟฟิก</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-    <style>
-        /* สไตล์ที่คุณเขียนไว้ */
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <!-- ฟอร์มและเนื้อหาต่างๆ -->
-    </div>
-
-    <footer>
-        <p>ติดต่อเรา: <a href="mailto:nopparat@jsccib.org">nopparat@jsccib.org</a></p>
-    </footer>
-
-    <!-- ใส่ JavaScript ที่นี่ -->
     <script>
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault(); // ป้องกันการส่งฟอร์มโดยตรง
 
             var formData = new FormData(event.target);
             
-            fetch("https://script.google.com/a/macros/jsccib.org/s/AKfycbzv4fuoyd8p4t53Co54oAchvCuts5Rk2C2HSN8Fu93iulmOQLNsIrff5pTfQ6fbolzz/exec", {  // ใส่ URL ของ Google Apps Script ที่นี่
+            fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {  // ใส่ URL ของ Google Apps Script ที่นี่
                 method: "POST",
                 body: formData
             })
@@ -368,10 +346,6 @@
             });
         });
     </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
